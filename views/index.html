@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mewon</title>
+        
+        <!-- <link rel="stylesheet" type="text/css" href="../public/style.css" />
+         -->
+         <link href="https://fonts.googleapis.com/css?family=Fredoka+One&display=swap" rel="stylesheet">
+         <style>
+             body{
+    color:blanchedalmond;
+    margin: 0px;
+    padding: 0px;
+    background: url(./imgs/green.jpg);
+    background-repeat: no-repeat;
+    background-size: 2066px 1080px;
+    font-family:'Fredoka One', cursive;
+
+}
+.form-box{
+    border: 5px solid whitesmoke;
+    border-radius: 34px;
+    /* display: inline-block; */
+    width: 30%;
+    padding: 96px 111px;
+    margin: 74px 171px;
+}
+
+
+
+.btn
+{
+    background-color:#426f0d03;
+    border: #426f0d03;;
+    color: whitesmoke;
+    font-family:'Fredoka One', cursive; 
+    font-size:larger;
+    border: 3px solid white;
+    border-radius: 12px;
+    padding: 9px 44px;
+    margin: 12px 15px;
+    cursor: pointer;
+}
+
+.btn:hover
+{
+    background-color: rgb(37, 35, 35);
+    color:rgb(12, 192, 12);
+    border:3px solid black ;
+    border-radius: 12px;
+}
+
+
+.right{
+    /* border: 2px solid blue; */
+    display: inline-block;
+    position: absolute;
+    top: 20px;
+    left: 34px;
+    margin: auto;
+    padding: 0px 22px;
+
+}
+.navbar
+{
+    display: inline-block;
+    padding: 2px 3px;
+}
+.navbar li {
+    display: inline-block;
+    padding: 2px 23px;
+}
+.navbar li a {
+
+    color: black;
+    font-size: 25px;
+    
+}
+.navbar li a:hover{
+    text-decoration: underline;
+    color:black;
+}
+
+.right h6:hover{
+    color:whitesmoke;
+    cursor: crosshair;
+
+}
+a{
+    text-decoration: none;
+
+}
+
+img{
+     width:95px;
+     background-repeat: no-repeat;
+     background-size:300px 100px; 
+     border-radius: 105px;
+     margin: 4px 83px;
+     padding: 0px;
+     box-sizing: border-box;
+}
+.mid{
+    /* border: 2px solid green; */
+    display: block;
+    width: 48%;
+    margin: 40px auto;
+    padding: 2px 22px;
+
+}
+.right h6{
+    color: black;
+    font-size:larger ;
+    margin: 5px 21px;
+    padding: 0px 39px;
+}
+.left
+{
+    /* border: 2px solid red; */
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    display: inline-block;
+    margin: 19px ;
+}
+
+.frombtn{
+    padding: 10px 155px;
+    display: inline-block;
+    background-color: black;
+    font-family: 'Fredoka One', cursive;
+    font-size: 20px;
+    cursor: pointer;
+    color: whitesmoke;
+    border: none;
+    border-radius: 35px;
+    margin: 13px 119px;
+}
+
+.formgrp input{
+    padding: 19px 58px;
+    margin: 9px 56px;
+    display: inline-block;
+    border: 3px solid black;
+    border-radius: 20px;
+    width: 83%;
+    box-sizing: border-box;
+    font-family:'Fredoka One', cursive;
+    font-size: 17px;
+}
+.frombtn:hover{
+    background-color: rgb(37, 35, 35);
+    color:rgb(18, 214, 18);
+}
+
+   
+
+
+.head{
+    /* border: 2px solid grey; */
+    color: black;
+    display: inline-block;
+    margin: 0px 100px;
+    padding: 6px 10px;
+    font-size: 34px;
+}
+.name{
+    /* border: 2px solid blue; */
+    color: rgb(61, 68, 59);
+    display: inline-block;
+    position: absolute;
+    top: 346px;
+    right: 5px;
+    /* left: auto; */
+    margin: 16px 217px;
+    font-size: 33px;
+    padding: 21px
+}
+
+.name:hover{
+    color: black;
+    cursor:cell;
+    text-decoration:overline;
+    text-decoration: underline;
+}
+         </style>
+        
+</head>
+
+<body>
+    <header class="header">
+        <!-- this is left most box -->
+        <div class="left">
+            <button class="btn">Follow</button>
+            <button class="btn">Contact</button>
+        </div>
+        <!-- this is middle block  -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="/project">Projects</a></li>
+                <li><a href="#">Code</a></li>
+                <li><a href="/user">User</a></li>
+            </ul>
+        </div>
+        <!-- this is right block -->
+        <div class="right">
+            <img src="../public/imgs/ter.jpg" alt="">
+            <h6>&lt;/ITERATORZ&gt;</h6>
+
+        </div>
+
+        <div class="form-box">
+            <div class="head">
+                <h4>To join us kindly fill the given form.</h4>
+
+            </div>
+            <form action="/user" method="POST" id="contact">
+                <div class="formgrp">
+                    <input type="text" name="name" id="name" placeholder="Enter your Name ">
+
+                </div>
+                <div class="formgrp">
+                    <input type="text" name="email" id="email" nplaceholder="Enter the Email">
+                </div>
+                <div class="formgrp">
+                    <input type="text" name="phone" id="phone" placeholder="Enter the Phone No.">
+                </div>
+                <div class="formgrp">
+                    <input type="text" name="org" id="org" placeholder="Organisation Name">
+
+                </div>
+                <!-- <div class="formgrp">
+                    <input type="checkbox"  placeholder="Remember me ">
+                </div> -->
+                <div class="formgrp">
+                    <button class="frombtn">Submit</button>
+                </div>
+
+            </form> 
+        </div>
+        <div class="name">
+            <h1>&lt;/ITERATORZ&gt;</h1>
+        </div>
+
+    </header>
+</body>
+
+</html>

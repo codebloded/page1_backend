@@ -5,6 +5,7 @@ const ejs = require('ejs').renderFile;
 const path  = require('path');
 const mongoose = require('mongoose');
 const userRouter = require('./routes/userRouter');
+const proRouter = require('./routes/proRouter');
 
 
 let app = express();
@@ -34,12 +35,7 @@ db.once('open', () =>{
 
 app.use('/',userRouter);
 app.use('/user',userRouter);
-
-
-
-
-
-
+app.use('/project', proRouter);
 
 
 //Listning the server 

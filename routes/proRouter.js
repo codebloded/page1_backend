@@ -22,6 +22,14 @@ proRouter.route('/')
         console.log(err);
         res.status(404).send("Some error occured");
     })
+})
+.delete((req,res)=>{
+    Project.deleteOne(req.body).then(item=>{
+        res.status(200).send('Deleted sucessfully form mongodb server')
+    }).catch(err=>{
+        console.log(err);
+        res.status(404).send("Some error occured");
+    });
 });
 
 
